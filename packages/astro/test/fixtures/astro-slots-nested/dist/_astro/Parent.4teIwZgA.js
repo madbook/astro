@@ -1,0 +1,1 @@
+import{j as e}from"./jsx-runtime.7faW4zRM.js";import{r as t}from"./index.DhYZZe0J.js";function u({children:s}){const[o,n]=t.useState(!1);return t.useEffect(()=>{console.log("mount")},[]),e.jsxs(e.Fragment,{children:[e.jsxs("p",{children:[e.jsx("input",{type:"checkbox",value:o,onChange:()=>n(!o)}),'Toggle show (true should show "Inner")']}),o?s:"Nothing"]})}export{u as default};

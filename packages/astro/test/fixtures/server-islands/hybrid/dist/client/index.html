@@ -1,0 +1,30 @@
+<!DOCTYPE html><html> <head><title>Testing</title></head> <body> <h1>Testing</h1> <!--server-island-start--><script async type="module" data-island-id="5d9daa10-ece8-49e7-a175-1f4dd9574845">
+let componentId = "Island";
+let componentExport = "default";
+let script = document.querySelector('script[data-island-id="5d9daa10-ece8-49e7-a175-1f4dd9574845"]');
+let data = {
+	componentExport,
+	props: {},
+	slots: {},
+};
+
+let response = await fetch('/_server-islands/Island', {
+	method: 'POST',
+	body: JSON.stringify(data),
+});
+
+if(response.status === 200 && response.headers.get('content-type') === 'text/html') {
+	let html = await response.text();
+
+	// Swap!
+	while(script.previousSibling?.nodeType !== 8 &&
+		script.previousSibling?.data !== 'server-island-start') {
+		script.previousSibling?.remove();
+	}
+	script.previousSibling?.remove();
+
+	let frag = document.createRange().createContextualFragment(html);
+	script.before(frag);
+}
+script.remove();
+</script> </body></html>

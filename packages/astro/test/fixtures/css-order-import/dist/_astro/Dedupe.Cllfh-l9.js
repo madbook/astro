@@ -1,0 +1,1 @@
+import{j as r}from"./jsx-runtime.7faW4zRM.js";/* empty css                        */import"./index.DhYZZe0J.js";function o(){return r.jsx("div",{className:"astro-jsx",children:"Dedupe Astro JSX"})}export{o as default};

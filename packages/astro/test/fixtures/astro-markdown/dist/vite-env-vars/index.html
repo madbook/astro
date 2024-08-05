@@ -1,0 +1,21 @@
+<!DOCTYPE html><h2 id="referencing-the-full-name-of-vite-env-vars">Referencing the full name of Vite env vars</h2>
+<p>You can get the configured site URL with <code>import.meta.env.SITE</code>.</p>
+<p>The variable <code>import.meta.env.TITLE</code> is not configured.</p>
+<p>You can reference all env vars through <code>import.meta.env</code>.</p>
+<p>This should also work outside of code blocks:</p>
+<ul>
+<li>import.meta.env.SITE</li>
+<li>import.meta.env.TITLE</li>
+<li>import.meta.env</li>
+</ul>
+<h2 id="usage-in-fenced-code-blocks-with-syntax-highlighting">Usage in fenced code blocks with syntax highlighting</h2>
+<pre class="language-js" data-language="js"><code is:raw="" class="language-js"><span class="token comment">// src/pages/rss.xml.js</span>
+<span class="token keyword">import</span> rss <span class="token keyword">from</span> <span class="token string">'@astrojs/rss'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">GET</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">rss</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	<span class="token comment">// Use Vite env vars with import.meta.env</span>
+	<span class="token literal-property property">site</span><span class="token operator">:</span> <span class="token keyword">import</span><span class="token punctuation">.</span>meta<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">SITE</span><span class="token punctuation">,</span>
+	<span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token keyword">import</span><span class="token punctuation">.</span>meta<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">TITLE</span><span class="token punctuation">,</span>
+	<span class="token literal-property property">items</span><span class="token operator">:</span> <span class="token keyword">import</span><span class="token punctuation">.</span>meta<span class="token punctuation">.</span><span class="token function">glob</span><span class="token punctuation">(</span><span class="token string">'./**/*.md'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>

@@ -1,0 +1,1 @@
+import{c,r as n,o as a}from"./runtime-core.esm-bundler.DAxlKGr4.js";const _=(e,t)=>{const r=e.__vccOpts||e;for(const[s,o]of t)r[s]=o;return r},l={},d={class:"vue-wrapper"};function f(e,t){return a(),c("div",d,[n(e.$slots,"default")])}const i=_(l,[["render",f]]);export{i as default};

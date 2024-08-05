@@ -1,0 +1,18 @@
+<!DOCTYPE html><html> <head><!-- Head Stuff --></head> <body> <div class="container"> <h1 id="hello-world">Hello world</h1>
+<pre class="astro-code Serendipity Morning" style="background-color:#FDFDFE;color:#4E5377; overflow-x: auto;" tabindex="0" data-language="yaml"><code><span class="line"><span style="color:#7397DE">apiVersion</span><span style="color:#5F6488">:</span><span style="color:#886CDB"> v3</span></span>
+<span class="line"><span style="color:#7397DE">kind</span><span style="color:#5F6488">:</span><span style="color:#886CDB"> Pod</span></span>
+<span class="line"><span style="color:#7397DE">metadata</span><span style="color:#5F6488">:</span></span>
+<span class="line"><span style="color:#7397DE">  name</span><span style="color:#5F6488">:</span><span style="color:#886CDB"> rss-site</span></span>
+<span class="line"><span style="color:#7397DE">  labels</span><span style="color:#5F6488">:</span></span>
+<span class="line"><span style="color:#7397DE">    app</span><span style="color:#5F6488">:</span><span style="color:#886CDB"> web</span></span>
+<span class="line"><span style="color:#7397DE">spec</span><span style="color:#5F6488">:</span></span>
+<span class="line"><span style="color:#7397DE">  containers</span><span style="color:#5F6488">:</span></span>
+<span class="line"><span style="color:#5F6488">    -</span><span style="color:#7397DE"> name</span><span style="color:#5F6488">:</span><span style="color:#886CDB"> front-end</span></span>
+<span class="line"><span style="color:#7397DE">      image</span><span style="color:#5F6488">:</span><span style="color:#886CDB"> nginx</span></span>
+<span class="line"><span style="color:#7397DE">      ports</span><span style="color:#5F6488">:</span></span>
+<span class="line"><span style="color:#5F6488">        -</span><span style="color:#7397DE"> containerPort</span><span style="color:#5F6488">:</span><span style="color:#F19A8E"> 80</span></span>
+<span class="line"><span style="color:#5F6488">    -</span><span style="color:#7397DE"> name</span><span style="color:#5F6488">:</span><span style="color:#886CDB"> rss-reader</span></span>
+<span class="line"><span style="color:#7397DE">      image</span><span style="color:#5F6488">:</span><span style="color:#886CDB"> nickchase/rss-php-nginx:v1</span></span>
+<span class="line"><span style="color:#7397DE">      ports</span><span style="color:#5F6488">:</span></span>
+<span class="line"><span style="color:#5F6488">        -</span><span style="color:#7397DE"> containerPort</span><span style="color:#5F6488">:</span><span style="color:#F19A8E"> 88</span></span>
+<span class="line"></span></code></pre> </div> </body></html>

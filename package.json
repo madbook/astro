@@ -37,8 +37,7 @@
     "benchmark": "astro-benchmark",
     "lint": "eslint . --report-unused-disable-directives",
     "version": "changeset version && node ./scripts/deps/update-example-versions.js && pnpm install --no-frozen-lockfile && pnpm run format",
-    "preinstall": "npx only-allow pnpm",
-    "prepare": "npm run build"
+    "preinstall": "npx only-allow pnpm"
   },
   "workspaces": [
     "packages/markdown/*",

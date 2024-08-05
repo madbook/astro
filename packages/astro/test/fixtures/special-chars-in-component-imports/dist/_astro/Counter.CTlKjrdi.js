@@ -1,0 +1,1 @@
+import{j as t}from"./jsx-runtime.7faW4zRM.js";import{r as o}from"./index.DhYZZe0J.js";function c({id:n}){const[r,e]=o.useState(0);return t.jsxs("div",{id:n,children:[t.jsxs("div",{children:[n,": ",r]}),t.jsx("button",{type:"button",onClick:()=>e(r+1),children:"Increment"})]})}export{c as default};

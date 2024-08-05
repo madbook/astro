@@ -1,0 +1,1 @@
+import"./index.DhYZZe0J.js";import{u as t}from"./jsxRuntime.module.BIWTLvyB.js";import"./preact.module.9bA1UASV.js";function u({name:r,unused:e}){return t("h2",{id:`react-${r}`,children:["Hello ",r,"!"]})}export{u as default};

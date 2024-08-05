@@ -1,0 +1,1 @@
+import{j as e}from"./jsx-runtime.7faW4zRM.js";import"./index.DhYZZe0J.js";const r="_red_146yk_1",s={red:r},o=()=>e.jsx("div",{children:e.jsx("h2",{className:s.red,children:"This text should be red"})});export{o as default};
